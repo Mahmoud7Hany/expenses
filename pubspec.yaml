@@ -1,0 +1,82 @@
+name: expenses
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.0 # حفظ البيانات
+  clipboard: ^0.1.3 # نسخ النص
+  flutter_slidable: ^3.0.1 # قابل للانزلاق
+  provider: ^6.1.2 # State Management
+  uuid: ^4.5.1 # لي انشاء رقم عشوائي
+  url_launcher: ^6.2.5 # لي فتح الروابط
+
+  flutter_launcher_icons: ^0.14.3 # لي اضافه ايقونه للتطبيق
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/splash.png"
+  # بعد اضافه هذا الاكواد قم بكتابه الامر ده 
+  # flutter pub run flutter_launcher_icons:main
+  # وسوف تجد الايقونه قد تم تغيرها
+  # لو بعد كده عاوز تستبدل ايقونه قم بحذف الايقونه القديمه واضف الايقونه الجديده واعد تشغيل الامر السابق
+  # وسوف تجد الايقونه قد تم تغيرها
+  # واستخدم اوامر دي بعدها
+  # flutter clean
+  # flutter pub get
+  # flutter pub run flutter_launcher_icons:main
+
+#  لي اضافه اللغه العربيه داخل التطبيق
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    #   ده خاص بان التطبيق يكون عربي
+  flutter_localizations: # Add this line
+    sdk: flutter # Add this line
+    
+    #  شاشة البداية
+  flutter_native_splash: ^2.2.14
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash.png
+  android_gravity: center
+  # في حاله الوضع المظلم
+  color_dark: "#202125"
+  android: true
+  ios: true
+  # بعد كده اعمل رن للاوامر دي
+  # flutter clean
+  # flutter pub get
+  # flutter pub run flutter_native_splash:create
+
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/splash.png
+  #   - images/a_dot_ham.jpeg
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
